@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang ="pt-br">
+<head>
+      <meta charset = "utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>InfoQuímica</title>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<style>
+table, th, td {
+  	border:3px solid #e44bf1;
+    }
+	body{ 
+    background-color: white;
+}
+td:hover {background-color: #FBCCD4;}
+</style>  
+<body>
+    <div class="container"><!-- Criar a classe container para adicionar ocarousel, cards, menu-->
+        <div class="row">
+            <div class="col-3">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJQ2qIk3RYyfV_H8iu0qVg5EV3fiKsBTiQJQ&s">
+            </div>
+            <div class="col-9">
+                <h1 style="display:flex; align-items: center; justify-content: center; padding-top: 50px; color: #e44bf1">InfoQuímica</h1>
+            </div>
+        </div>
+        <hr>
+        <ul class="nav">
+            <li class="nav-item">
+                <a class = "nav-link active" aria-current="page" href="#">Início</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="quem_somos.html">Quem Somos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Exemplos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Exercícios</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Dúvidas</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Contato</a>
+            </li>
+        </ul>
+        <hr>
+  <p style="background-color: #B3EBF2; color:#e44bf1"><b>Somos um grupo de professores dedicados com a educação de jovens que apresentam dificuldades nessa ciência exata e se dedicam a superar os desafios impostos por qualquer matéria em que temos o hábito de denominá-la incompreensível.Assim, nossa missão é utilízar métodologias para facilitar a compreensão de conteúdos significativos da química que compõem o Exame Nacional do Enino Médio (ENEM) a partir de situações que ocorrem frequentemente em nossa rotina, através de conceitos, exemplos, curiosidades e exercícios para aprofundar sua concepção de como a ciência engloba várias disciplinas dentre elas:"Química".</b></p>
+  <hr>
+  <p style ="color: black">As primeiras décadas do século XIX, muitos cientistas acreditavam que compostos orgânicos eram obtidos a partir de animais e vegetais.No entanto essa idéia perdurou até 1828, quando Friedrich Wohler, químico alemão realizou experimentos que demonstravam a possibilidade de sintetizar substâncias orgânicas não somente a partir de animais e vegetais.</p>
+  <p style ="color: black">Muitos desses experimentos constataram a presença do elemento carbono nos compostos sintetizados, essa constatação serviu para enunciar a definiçãi de química orgânica:</p>
+  <p style ="color: black">Em razão do elevado número de compostos orgânicos, houve a necessidade de agrupá-los em classes, segundo suas propriedades químicas comuns, a fim de facilitar o seu estudo.</p>
+  <p style ="color: black">Esses grupramentos recebem o nome de funções orgânicas.</p>
+  <p style ="color: black"><b>Na química orgânica existem muitas funções, sendo as principais:</b></p>
+  <ul style ="list-style-type: disk;">
+        <li Style = "color:#e44bf1"><b>Função hidrogenada - Hidrocarbonetos.</b></li>
+        <li Style = "color:#e44bf1"><b>Função oxigenada - Fenóis, álcoois, aldeídos, cetonas, ácidos carboxílicos, éteres e ésteres.</b></li>
+        <li Style = "color:#e44bf1"><b>Funções nitrogenadas - Aminas e amidas.</b></li>
+        <li Style = "color:#e44bf1"><b>Funções halogenadas - Haletos.</b></li>
+  </ul>
+        <hr>            
+        <br>
+        <br>
+        <div>
+        <div class="row">
+            <div class="col">
+                <div id="carouselExampleIndicators" class="carousel slide">
+                    <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://static.mundoeducacao.uol.com.br/mundoeducacao/2024/05/2-experimento-em-laboratorio-em-alusao-a-reacoes-quimicas.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://s4.static.brasilescola.uol.com.br/be/2025/05/elementos-e-vidrarias-de-laboratorio-de-quimica-com-substancias-uma-alusao-a-quimica-geral.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://static.mundoeducacao.uol.com.br/mundoeducacao/2024/05/2-experimento-em-laboratorio-em-alusao-a-reacoes-quimicas.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+</div>
+<br>
+<br>
+<br>
+        <h3 style="text-align:center; color:#e44bf1">Algumas Curiosidades......</h3>
+        <br>
+        <br>
+        <br>
+        <div class="row">
+              <div class="col"><!--Add a classe coluna para cada bloco do card-->
+                  <div class="card" style="width: 18rem;">
+                      <img src="https://medias.revistaoeste.com/wp-content/uploads/2025/02/Amostra_de_Petroleo_Credito_Roberto-Rosa_Agencia-Petrobras_b-scaled.jpg"class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <p class="card-text">O petróleo é um hodrocarboneto sendo uma mistura de compostos orgânicos, com pequenas quantidades de outros elementos.</p>
+                      </div>
+                    </div>
+              </div>
+              <div class="col">
+                  <div class="card" style="width: 18rem;">
+                      <img src="https://vejasp.abril.com.br/wp-content/uploads/2018/01/evoluc3a7c3a3o.jpg?quality=70&strip=info&w=650"class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <p class="card-text">O aldeído Fenólico Vanilina é o ingrediente que proporciona o aroma de baunilha no sorvete Chicabon.</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="col">
+                  <div class="card" style="width: 18rem;">
+                      <img src="https://cloudfront-us-east-1.images.arcpublishing.com/estadao/CU6HU7WMEVF2THSPFT7RBQXFWM.jpeg"class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <p class="card-text">Alimentos com sabor artificial de banana possuem um ingrediente do grupo dos ésteres, o flavorizante Acetato de Pentila.</p>  
+                    </div>
+                  </div>
+              </div>     
+<h5 style = "color:black">Diante de sua importância veremos exercícios sobre os temas mais importantes para aprofundar seus conhecimentos.</h5>
+<br>
+<h5>Os conteúdos abordados contém:</h5>
+<br>
+<br>
+<ul style = "list-style-type: square;">
+        <li style ="color:blue"><b>Conceitos</b></li>
+        <li style ="color:#69239e"><b>Exercícios</b></li>
+        <li style ="color:green"><b>Resolução Exercícios</b></li>
+        <li style ="color:#c16803f0"><b>Exercícios Extras</b></li>
+</ul>
+<p style = "color: black">Click na tabela abaixo para ter acesso ao nosso material.</p> 
+<h5 style="font-size:350%; text-align: center; color:#e44bf1">Química Orgânica<h5>
+<table>
+  <tr style = "text-align: center">
+    <th style = "color:blue; text-align: center"><b>Conceitos</b></th>
+    <th style = "color:#69239e; text-align: center"><b>Exercícios</b></th>
+    <th style = "color:green; text-align: center"> <b>Resolução Exercícios</b></th>
+    <th style = "color:#c16803f0; text-align: center"><b>Exercícios Extras</b></th>
+  </tr>
+  <tr style = "text-align: center">
+    <td style = "text-align: center">Funções Orgânicas: Hidrocarbonetos</td>
+    <td style = "text-align: center">Fórmula molecular, estrutural e nomenclatura</td>
+    <td style = "text-align: center">Hidrocarbonetos</td>
+    <td style = "text-align: center">ENEM</td>
+  </tr>
+  <tr style = "text-align: center">
+    <td style = "text-align: center">Funções Orgânicas: Oxigenadas</td>
+    <td style = "text-align: center">Fórmula molecular, estrutural e nomenclatura</td>
+    <td style = "text-align: center">Funções Oxigenadas</td>
+    <td style = "text-align: center">ENEM</td>
+  </tr>
+  <tr style = "text-align: center">
+    <td style = "text-align: center">Funções Orgânicas: Nitrogenadas</td>
+    <td style = "text-align: center">Fórmula molecular, estrutural e nomenclatura</td>
+    <td style = "text-align: center">Funções Nitrogenadas</td>
+    <td style = "text-align: center">ENEM</td>
+  </tr>
+  <tr style = "text-align: center">
+    <td style = "text-align: center">Funções Orgânicas: Haletos</td>
+    <td style = "text-align: center">Fórmula molecular, estrutural e nomenclatura</td>
+    <td style = "text-align: center">Haletos</td>
+    <td style = "text-align: center">ENEM</td>
+  </tr>
+</table>
+<br>
+<br>
+<br>
+Para aprofundar ainda mais seus conhecimentos entre aqui para acessar o conteúdo desejado.<a href = "https://www.profpc.com.br" target ="_blank">Site complementar do curso</a><br>
+<br>
+<br>
+<br>
+<hr>
+<ul class="nav">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Início</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="quem_somos.html">Quem Somos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Exemplos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Exercícios</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Dúvidas</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Contato</a>
+            </li>
+</ul>
+<hr>   
+<img src="https://images.vexels.com/media/users/3/137198/isolated/lists/07f0d7b69ef071571e4ada2f4d6a053a-icone-do-instagram-colorido.png" alt="" width="50" height="50">
+<img src="https://static.vecteezy.com/system/resources/previews/009/636/655/non_2x/email-3d-icon-png.png" alt="" width="50" height="50">
+<img src="https://cdn-icons-png.flaticon.com/256/124/124010.png" alt="" width="30" height="30">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
