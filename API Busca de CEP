@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Busca CEP</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <style>
+    body {
+      background-image: url('https://static.vecteezy.com/ti/fotos-gratis/p1/2170868-lupa-com-caderno-sobre-fundo-branco-foto.jpg');
+      background-size: cover;
+    }
+  </style>
+  <script>
+    $(document).ready(function () {
+        $("#buscar").click(function () {
+            const cep = $("#cep").val();
+
+            $.get("https://brasilapi.com.br/api/cep/v2/" + cep, function (data) {
+
+                console.log(JSON.stringify(data)); // transforma o objeto em texto
+
+                const html = "CEP: " + data.cep + "\n" +
+                    "Estado: " + data.state + "\n" +
+                    "Cidade: " + data.city + "\n" +
+                    "Bairro: " + data.neighborhood + "\n" +
+                    "Rua: " + data.street + "\n";
+
+                console.log(html);
+                $("#resultado").val(html);
+
+            });
+        });
+    });
+</script>
+    
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <h1 style="color: orange">BUSCA CEP</h1>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-8">
+        <div class="mb-3">
+          <input type="text" class="form-control" placeholder="Digite o CEP" id="cep">
+        </div>
+      </div>
+      <div class="col">
+        <button type="button" id="buscar" class="btn btn-warning">Buscar</button>
+      </div>
+    </div>
+
+    <div style="margin-top:10px" class="row">
+      <div class="col">
+        <div class="mb-3">
+          <textarea class="form-control" id="resultado" rows="5"></textarea>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
