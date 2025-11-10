@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        body{ 
+    background-image: url('https://static.vecteezy.com/ti/fotos-gratis/p1/2170868-lupa-com-caderno-sobre-fundo-branco-foto.jpg');
+}
+    </style>
+    <script>
+        $(document).ready(function () {
+            $("#buscar").click(function () {
+                const numero = $("#numeroFipe").val();
+
+
+                $.get("https://brasilapi.com.br/api/banks/v1/" + numero, function(data,  status){
+
+                   
+                    
+                const html = "ispb: "+ data.ispb + "\n" + 
+                                "code: "+ data.code+ "\n" +
+                                "name: "+ data.name+ "\n" +
+                                "Fullname: "+ data.fullName + "\n";
+                                
+                    console.log(html)            
+                    $("#resultado").val(html);
+                    
+                });
+            });
+        });
+</script>
+</head>
+<body>
+     <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1 style="color: orange">Bancos</h1>
+            </div>
+        </div><!-- fim de linha-->
+        <div class="row">
+            <div class="col-8">
+                <div class="mb-3">
+                    <input type="email" style="margin-top: 10px;" class="form-control"
+                        placeholder="Digite o código" id="numeroFipe">
+                </div>
+            </div>
+            <div class="col">
+                <button type="button" id="buscar" class="btn btn-warning">Buscar</button>
+            </div>
+        </div><!-- fim de linha-->
+        <div style="margin-top:10px" class="row">
+            <div class="col">
+                <div class="mb-3">
+                    <textarea class="form-control" id="resultado" rows="3"></textarea>
+                </div>
+            </div>
+        </div><!-- fim de linha-->
+    </div> <!-- fim container -->
+
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+</html>
